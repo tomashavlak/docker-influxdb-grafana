@@ -1,5 +1,5 @@
 influxdb:
-  image: influxdb:1.7.*
+  image: influxdb:1.7.6
   container_name: influxdb
   ports:
     - "8083:8083"
@@ -13,7 +13,7 @@ influxdb:
     - /srv/docker/influxdb/data:/var/lib/influxdb
 
 grafana:
-  image: grafana/grafana:6.1.*
+  image: grafana/grafana:6.1.6
   container_name: grafana
   ports:
     - "3000:3000"
